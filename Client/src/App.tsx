@@ -1,11 +1,13 @@
-import Divider from "./components/shared/Divider"
 import 'remixicon/fonts/remixicon.css'
 import 'animate.css';
+import Signup from "./components/Signup";
+import { BrowserRouter } from 'react-router-dom';
+import Login from './components/Login';
 const App = () => {
   return (
-    <div>App
-      <Divider/>
-    </div>
+    <BrowserRouter>
+      <Signup/>
+    </BrowserRouter>
   )
 }
 
