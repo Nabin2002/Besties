@@ -6,7 +6,7 @@ import { Link, useNavigate } from 'react-router-dom'
 // import { toast } from 'react-toastify'
 // import { CatchError } from '../lib/CatchError'
 const Signup = () => {
-    // const navigate = useNavigate()
+    const navigate = useNavigate()
     // const signup = async (values: FormDataType) => {
     //     try {
     //         await HttpInterceptor.post('/auth/signup', values)

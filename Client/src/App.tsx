@@ -1,12 +1,16 @@
 import 'remixicon/fonts/remixicon.css'
 import 'animate.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Signup from "./components/Signup";
-import { BrowserRouter } from 'react-router-dom';
 import Login from './components/Login';
+
 const App = () => {
   return (
     <BrowserRouter>
-      <Signup/>
+      <Routes>
+        <Route path='/signup' element={<Signup />} />
+        <Route path='/login' element={<Login />} />
+      </Routes>
     </BrowserRouter>
   )
 }
